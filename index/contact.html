@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Page Title and Favicon -->
+    <title>AA Classic Cars</title>
+    <link rel="icon" href="/images/Tab Icon.png" type="image/x-icon" />
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Duplicate title, consider removing one -->
     <title>Document</title>
+
+    <!-- Boxicons CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="/style/style.css" />
     <style>
       /* Contact Section Styles */
@@ -81,11 +90,12 @@
     </style>
   </head>
   <body>
+    <!-- Header Section -->
     <header>
       <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS </a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
-      <!-- Menu -->
+      <!-- Navigation Menu -->
       <ul class="navbar">
         <li><a href="/index.html" class="home-active">Home</a></li>
         <li><a href="/index/Spotlight.html">Spotlight</a></li>
@@ -95,21 +105,24 @@
 
       <a href="#" class="btn">Sign In</a>
     </header>
+
+    <!-- Contact Section -->
     <section class="contact">
       <h1 class="heading">contact us</h1>
 
       <div class="row">
-       <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.935754872413!2d55.28958227511874!3d25.04996443779479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68ff8bbdf4ff%3A0x8a44beed01a3e73d!2sGEMS%20New%20Millennium%20School%20-%20Al%20Khail!5e0!3m2!1sen!2sae!4v1716147331337!5m2!1sen!2sae"
-  width="600"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+        <!-- Google Maps Embed -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.935754872413!2d55.28958227511874!3d25.04996443779479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68ff8bbdf4ff%3A0x8a44beed01a3e73d!2sGEMS%20New%20Millennium%20School%20-%20Al%20Khail!5e0!3m2!1sen!2sae!4v1716147331337!5m2!1sen!2sae"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
-
+        <!-- Contact Form -->
         <form action="">
           <input type="text" placeholder="name" class="box" />
           <input type="email" placeholder="email" class="box" />
@@ -127,6 +140,7 @@
       </div>
     </section>
 
+    <!-- Footer Section -->
     <section class="footer">
       <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS </a>
       <div class="social">
@@ -138,15 +152,18 @@
         </a>
       </div>
     </section>
-    <!--Copyright-->
+
+    <!-- Copyright -->
     <div class="copyright">
       <p>&#169; AA-CLASSIC CARS All Right Reserved.</p>
     </div>
 
+    <!-- JavaScript Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
     <script>
+      // Initialize lightGallery (make sure .projects .box-container exists)
       lightGallery(document.querySelector(".projects .box-container"));
     </script>
   </body>

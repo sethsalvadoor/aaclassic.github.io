@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Page Title and Favicon -->
+    <title>AA Classic Cars</title>
+    <link rel="icon" href="/images/Tab Icon.png" type="image/x-icon" />
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main CSS -->
     <link rel="stylesheet" href="/style/style.css" />
-    <title>Document</title>
+    <!-- Boxicons CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <style>
+      /* Heading styles */
       .heading {
         text-align: center;
         padding-top: 7%;
@@ -24,6 +31,7 @@
         border-bottom: 1px solid var(--main-color);
       }
 
+      /* Main content container */
       .guild {
         max-width: 1200px;
         margin: 80px auto;
@@ -34,6 +42,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
+      /* Headings */
       h1,
       h2 {
         color: #333;
@@ -47,9 +56,10 @@
         text-transform: uppercase;
         color: #111111;
       }
-h3 {
-  color: black;
-}
+      h3 {
+        color: black;
+      }
+      /* Paragraph styles */
       p {
         margin-top: 3%;
         font-size: 1rem;
@@ -57,15 +67,13 @@ h3 {
         letter-spacing: 3px;
         color: black;
       }
-      /* Reset some default styles */
-     
 
-      /* Apply a box-sizing border-box model for easier layout */
+      /* Box-sizing for all elements */
       * {
         box-sizing: border-box;
       }
 
-      /* Style the box container */
+      /* Box container for car cards */
       .box-container {
         display: flex;
         flex-wrap: wrap;
@@ -74,7 +82,7 @@ h3 {
         margin: 20px;
       }
 
-      /* Style each box */
+      /* Individual car box styles */
       .box {
         width: 100%;
         max-width: 300px; /* Adjust the maximum width as needed */
@@ -90,7 +98,7 @@ h3 {
         transform: scale(1.05); /* Add a slight scale effect on hover */
       }
 
-      /* Style the box image */
+      /* Car image styles */
       .box img {
         width: 100%;
         height: auto;
@@ -98,19 +106,19 @@ h3 {
         margin-bottom: 15px;
       }
 
-      /* Style the box headings */
+      /* Car box heading */
       .box h3 {
         font-size: 20px;
         margin-bottom: 10px;
       }
 
-      /* Style the box paragraphs */
+      /* Car box text */
       .box .texts {
         font-size: 14px;
         line-height: 1.5;
       }
 
-      /* Media Queries */
+      /* Responsive styles for different devices */
       @media only screen and (max-width: 480px) {
         /* iPhone 4 (320px x 480px) */
         .guild {
@@ -128,8 +136,6 @@ h3 {
         .guild {
           padding: 20px;
         }
-       
-        
       }
 
       @media only screen and (min-width: 411px) and (max-width: 731px) {
@@ -152,11 +158,12 @@ h3 {
     </style>
   </head>
   <body>
+    <!-- Header and Navigation -->
     <header>
       <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS </a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
-      <!-- Menu -->
+      <!-- Navigation Menu -->
       <ul class="navbar">
         <li><a href="/index.html" class="home-active">Home</a></li>
         <li><a href="/index/Spotlight.html">Spotlight</a></li>
@@ -166,11 +173,16 @@ h3 {
 
       <a href="#" class="btn">Sign In</a>
     </header>
+
+    <!-- Page Heading -->
     <h1 class="heading">Insight</h1>
+
+    <!-- Introduction Section -->
     <section class="guild">
       <img src="/images/1.avif" width="100%" />
       <h2>Introduction</h2>
       <p>
+        <!-- Introduction text about car buying and the Buyer's Guide law -->
         The experts here at Car and Driver have been evaluating and testing
         hundreds of new cars every year since 1956. From performance metrics
         such as acceleration times and cornering grip to consumer-oriented
@@ -184,19 +196,21 @@ h3 {
         specials, our Buyer's Guide has it all.
         When it comes to purchasing a car, it is essential for consumers to have a clear understanding of the process and their rights. This is where a Car Buyer’s Guide becomes crucial. A Car Buyer’s Guide is a document provided by a car dealer to potential buyers that contains important information about the vehicle being sold. It serves as a mandatory disclosure under the Buyer Beware Law for Cars, which aims to protect consumers in their car-buying transactions.
 
-The Buyer Beware Law for Cars is a legal principle that holds buyers responsible for making informed decisions when purchasing a car. It recognizes that sellers have more knowledge about the vehicle being sold and may withhold information that could influence a buyer’s decision. To level the playing field, the law requires sellers to provide buyers with a Car Buyer’s Guide, which outlines crucial details about the car.
+        The Buyer Beware Law for Cars is a legal principle that holds buyers responsible for making informed decisions when purchasing a car. It recognizes that sellers have more knowledge about the vehicle being sold and may withhold information that could influence a buyer’s decision. To level the playing field, the law requires sellers to provide buyers with a Car Buyer’s Guide, which outlines crucial details about the car.
       </p>
-      
-      
     </section>
+
+    <!-- Car Services/Models Section -->
     <section class="services">
       <div class="box-container">
+        <!-- Toyota Supra Card -->
         <div class="box">
           <img src="/images/menu1.png" alt="" />
           <h3>Toyota Supra</h3>
           <p class="texts">The initial four generations of the Supra were produced from 1978 to 2002. The fifth generation has been produced since March 2019 and went on sale in May 2019.[4] The styling of the original Supra was derived from the Toyota Celica, but it was both longer and wider.[5] Starting in mid-1986, the A70 Supra became a separate model from the Celica.</p>
         </div>
 
+        <!-- Lexus Card -->
         <div class="box">
           <img src="/images/menu2.png" alt="" />
           <h3>Lexus</h3>
@@ -205,16 +219,16 @@ The Buyer Beware Law for Cars is a legal principle that holds buyers responsible
           </p>
         </div>
 
+        <!-- Bentley Card -->
         <div class="box">
           <img src="/images/menu3.png" alt="" />
-          <h3>Bentley
-
-          </h3>
+          <h3>Bentley</h3>
           <p class="texts">
             Prominent models extend from the historic sports-racing Bentley 4½ Litre and Bentley Speed Six; the more recent Bentley R Type Continental, Bentley Turbo R, and Bentley Arnage; to its current model line, including the Flying Spur, Continental GT, Bentayga and the Mulsanne—which are marketed worldwide, with China as its largest market as of November 2012.[16]
           </p>
         </div>
 
+        <!-- Jeep Card -->
         <div class="box">
           <img src="/images/menu4.png" alt="" />
           <h3>Jeep</h3>
@@ -222,32 +236,31 @@ The Buyer Beware Law for Cars is a legal principle that holds buyers responsible
             Jeep's current product range consists solely of sport utility vehicles—both crossovers and fully off-road worthy SUVs and models, including one pickup truck. Previously, Jeep's range included other pick-ups, as well as small vans, and a few roadsters. Some of Jeep's vehicles—such as the Grand Cherokee—reach into the luxury SUV segment, a market segment the 1963 Wagoneer is considered to have started
           </p>
         </div>
-
-
-
+      </div>
     </section>
-   <!--Footer-->
-   <section class="footer">
-    <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS</a>
-    <div class="social">
-      <a href="">
-        <i class="bx bxl-facebook"></i>
-        <i class="bx bxl-twitter"></i>
-        <i class="bx bxl-instagram"></i>
-        <i class="bx bxl-tiktok"></i>
-      </a>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS</a>
+      <div class="social">
+        <a href="">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-tiktok"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&#169; AA-CLASSIC CARS All Right Reserved.</p>
     </div>
-  </section>
 
-  <!--Copyright-->
-  <div class="copyright">
-    <p>&#169; AA-CLASSIC CARS All Right Reserved.</p>
-  </div>
+    <!-- Swiper JS (for sliders/carousels) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Link to custom JS -->
-  <script src="/js/main.js"></script>
-</body>
+    <!-- Custom JS -->
+    <script src="/js/main.js"></script>
+  </body>
 </html>
