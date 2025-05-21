@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .heading {
+        text-align: center;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        color: aliceblue;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--main-color);
+      }
+
+      .guild {
+        max-width: 1200px;
+        margin: 80px auto;
+        margin-top: 3%;
+        margin-bottom: 0;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #333;
+      }
+
+      h2 {
+        text-align: center;
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: #111111;
+      }
+h3 {
+  color: black;
+}
+      p {
+        margin-top: 3%;
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 3px;
+        color: black;
+      }
+      /* Reset some default styles */
+     
+
+      /* Apply a box-sizing border-box model for easier layout */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Style the box container */
+      .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px;
+      }
+
+      /* Style each box */
+      .box {
+        width: 100%;
+        max-width: 300px; /* Adjust the maximum width as needed */
+        padding: 20px;
+        border: 1px solid #ddd; /* Add a border for separation */
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        background-color: white;
+      }
+
+      .box:hover {
+        transform: scale(1.05); /* Add a slight scale effect on hover */
+      }
+
+      /* Style the box image */
+      .box img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      /* Style the box headings */
+      .box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Style the box paragraphs */
+      .box .texts {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* Media Queries */
+      @media only screen and (max-width: 480px) {
+        /* iPhone 4 (320px x 480px) */
+        .guild {
+          padding: 10px;
+        }
+        .heading {
+          font-size: 2rem;
+          font-weight: 500;
+          margin-top: 10%;
+        }
+      }
+
+      @media only screen and (min-width: 375px) and (max-width: 812px) {
+        /* iPhone X (375px x 812px) */
+        .guild {
+          padding: 20px;
+        }
+       
+        
+      }
+
+      @media only screen and (min-width: 411px) and (max-width: 731px) {
+        .guild {
+          padding: 25px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .guild {
+          padding: 30px;
+        }
+      }
+
+      @media only screen and (min-width: 1440px) and (max-width: 900px) {
+        .guild {
+          padding: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <!-- Menu -->
+      <ul class="navbar">
+        <li><a href="/index.html" class="home-active">Home</a></li>
+        <li><a href="/index/Spotlight.html">Spotlight</a></li>
+        <li><a href="/index/insight.html">Insight</a></li>
+        <li><a href="/index/contact.html">Contact</a></li>
+      </ul>
+
+      <a href="#" class="btn">Sign In</a>
+    </header>
+    <h1 class="heading">Insight</h1>
+    <section class="guild">
+      <img src="/images/1.avif" width="100%" />
+      <h2>Introduction</h2>
+      <p>
+        The experts here at Car and Driver have been evaluating and testing
+        hundreds of new cars every year since 1956. From performance metrics
+        such as acceleration times and cornering grip to consumer-oriented
+        insights such as real-world highway mpg and carry-on suitcase capacity,
+        we test it all. With more than a half-century of collected data, and a
+        staff of highly educated car enthusiasts, we don't claim to be the best
+        source of shopping advice. We are the best. Our experts provide detailed
+        car-buying guidance by driving every car that enters the market and
+        analyzing our own test results as well as automaker specifications.
+        Whether you're looking for new or used cars, lease deals or tire
+        specials, our Buyer's Guide has it all.
+        When it comes to purchasing a car, it is essential for consumers to have a clear understanding of the process and their rights. This is where a Car Buyer’s Guide becomes crucial. A Car Buyer’s Guide is a document provided by a car dealer to potential buyers that contains important information about the vehicle being sold. It serves as a mandatory disclosure under the Buyer Beware Law for Cars, which aims to protect consumers in their car-buying transactions.
+
+The Buyer Beware Law for Cars is a legal principle that holds buyers responsible for making informed decisions when purchasing a car. It recognizes that sellers have more knowledge about the vehicle being sold and may withhold information that could influence a buyer’s decision. To level the playing field, the law requires sellers to provide buyers with a Car Buyer’s Guide, which outlines crucial details about the car.
+      </p>
+      
+      
+    </section>
+    <section class="services">
+      <div class="box-container">
+        <div class="box">
+          <img src="/images/menu1.png" alt="" />
+          <h3>Toyota Supra</h3>
+          <p class="texts">The initial four generations of the Supra were produced from 1978 to 2002. The fifth generation has been produced since March 2019 and went on sale in May 2019.[4] The styling of the original Supra was derived from the Toyota Celica, but it was both longer and wider.[5] Starting in mid-1986, the A70 Supra became a separate model from the Celica.</p>
+        </div>
+
+        <div class="box">
+          <img src="/images/menu2.png" alt="" />
+          <h3>Lexus</h3>
+          <p class="texts">
+            Created at around the same time as Japanese rivals Honda and Nissan created their Acura and Infiniti luxury divisions respectively, Lexus originated from a corporate project to develop a new premium sedan, code-named F1, which began in 1983 and culminated in the launch of the Lexus LS in 1989.[8] Subsequently, the division added sedan, coupé, convertible and SUV models. Lexus did not exist as a brand in its home market until 2005,
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="/images/menu3.png" alt="" />
+          <h3>Bentley
+
+          </h3>
+          <p class="texts">
+            Prominent models extend from the historic sports-racing Bentley 4½ Litre and Bentley Speed Six; the more recent Bentley R Type Continental, Bentley Turbo R, and Bentley Arnage; to its current model line, including the Flying Spur, Continental GT, Bentayga and the Mulsanne—which are marketed worldwide, with China as its largest market as of November 2012.[16]
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="/images/menu4.png" alt="" />
+          <h3>Jeep</h3>
+          <p class="texts">
+            Jeep's current product range consists solely of sport utility vehicles—both crossovers and fully off-road worthy SUVs and models, including one pickup truck. Previously, Jeep's range included other pick-ups, as well as small vans, and a few roadsters. Some of Jeep's vehicles—such as the Grand Cherokee—reach into the luxury SUV segment, a market segment the 1963 Wagoneer is considered to have started
+          </p>
+        </div>
+
+
+
+    </section>
+   <!--Footer-->
+   <section class="footer">
+    <a href="#" class="logo"><i class="bx bx-car"></i>AA-CLASSIC CARS</a>
+    <div class="social">
+      <a href="">
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-tiktok"></i>
+      </a>
+    </div>
+  </section>
+
+  <!--Copyright-->
+  <div class="copyright">
+    <p>&#169; AA-CLASSIC CARS All Right Reserved.</p>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Link to custom JS -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

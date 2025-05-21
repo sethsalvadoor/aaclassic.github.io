@@ -1,0 +1,549 @@
+/* Global Styles */
+* {
+    /* Set default font, remove margin/padding, set box-sizing, remove list and link styles, set scroll behavior */
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+/* Color Variables */
+:root {
+    /* Define main, text, and background colors */
+    --main-color: #ff2c1f;
+    --text-color: #020307;
+    --bg-color: #fff;
+}
+
+/* Custom Scroll Bar */
+html::-webkit-scrollbar {
+    /* Style scrollbar track */
+    width: 0.5rem;
+    background: var(--text-color);
+}
+
+html::-webkit-scrollbar-thumb {
+    /* Style scrollbar thumb */
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+/* Body Styles */
+body {
+    /* Set background and text color */
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+section {
+    /* Section padding */
+    padding: 4.5rem 0 1.5rem;
+}
+
+/* Header Styles */
+header {
+    /* Fixed header with flex layout */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+}
+
+header.shadow {
+    /* Header shadow and background on scroll */
+    background: rgb(29, 24, 24);
+    box-shadow: 0 0 4px rgba(14, 55, 54, 0.15);
+}
+
+header.shadow .navbar a {
+    /* Navbar link color in shadow mode */
+    color: var(--main-color);
+}
+
+header.shadow .logo {
+    /* Logo color in shadow mode */
+    color: rgb(255, 255, 255);
+}
+
+/* Logo Styles */
+.logo {
+    /* Logo font and layout */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+.logo .bx {
+    /* Logo icon color and size */
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.navbar {
+    /* Navbar layout */
+    display: flex;
+    -moz-column-gap: 5rem;
+    column-gap: 5rem;
+}
+
+.navbar li {
+    /* Navbar item positioning */
+    position: relative;
+}
+
+.navbar a {
+    /* Navbar link styles */
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+
+.navbar a::after {
+    /* Underline effect for navbar links */
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+
+.navbar a:hover::after,
+.navbar .home-active::after {
+    /* Expand underline on hover or active */
+    width: 100%;
+}
+
+#menu-icon {
+    /* Hamburger menu icon styles */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+
+.btn {
+    /* Button styles */
+    padding: 0.7rem 1.4rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 0.4rem;
+}
+
+.btn:hover {
+    /* Button hover effect */
+    background: green;
+}
+
+/* Typo: Should be .container */
+.conatiner {
+    /* Main container styles */
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.conatiner img {
+    /* Background image styles */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    z-index: -1;
+    background: rgba(233, 14, 14, 0.4);
+}
+
+.home-text {
+    /* Home text positioning and padding */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 1000;
+    padding: 0 150px;
+}
+
+.home-text span {
+    /* Home text span styles */
+    color: var(--bg-color);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.home-text h1 {
+    /* Home text heading styles */
+    color: var(--bg-color);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination-bullet {
+    /* Pagination bullet styles */
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 0.2rem !important;
+    background: var(--bg-color) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    /* Active pagination bullet */
+    width: 1.5rem !important;
+    background: var(--main-color) !important;
+}
+
+/* Headings Styles */
+.headings {
+    /* Section heading styles */
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* Movies Container Grid */
+.movies-container {
+    /* Grid layout for movies */
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box .box-img {
+    /* Movie box image size */
+    width: 100%;
+    height: 270px;
+}
+
+.box .box-img img {
+    /* Movie image fit */
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.box .box-img img:hover {
+    /* Image hover effect */
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+
+.box h3 {
+    /* Movie title styles */
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.box span {
+    /* Movie info styles */
+    font-size: 13px;
+}
+
+/* Coming Soon Container */
+.coming-container {
+    /* Grid for coming soon movies */
+    display: grid;
+    gap: 1rem;
+    max-width: 986px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.coming-container .box-img img:hover {
+    /* Disable hover effect for coming soon */
+    transform: translateY(0);
+}
+
+.coming-container .box {
+    /* Coming soon box width */
+    width: 100px;
+}
+
+/* Newsletter Styles */
+.newsletter {
+    /* Newsletter layout */
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.newsletter h2 {
+    /* Newsletter heading */
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.newsletter form {
+    /* Newsletter form styles */
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter form input {
+    /* Form input styles */
+    border: none;
+    outline: none;
+}
+
+.newsletter form .email {
+    /* Email input width */
+    width: 280px;
+}
+
+.newsletter form input::-moz-placeholder {
+    /* Placeholder color for Firefox */
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.newsletter form input::placeholder {
+    /* Placeholder color for other browsers */
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.newsletter .btn {
+    /* Newsletter button styles */
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    /* Footer layout */
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    /* Social icons layout */
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+.social .bx {
+    /* Social icon styles */
+    background: var(--bg-color);
+    padding: 2px;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 4px solid rgba(2, 3, 7, 0.4);
+    color: var(--main-color);
+}
+
+.social .bx:hover {
+    /* Social icon hover effect */
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.2s all linear;
+}
+
+.copyright {
+    /* Copyright text styles */
+    padding: 20px;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+/* Responsive Styles */
+
+/* For screens <= 1080px */
+@media (max-width: 1080px) {
+    .home-text {
+        padding: 0 100px;
+    }
+}
+
+/* For screens <= 991px */
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+    .home-text {
+        padding: 0.4%;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+}
+
+/* For screens <= 774px */
+@media (max-width: 774px) {
+    header {
+        padding: 12px 4%;
+    }
+    #menu-icon {
+        display: initial;
+        color: var(--bg-color);
+    }
+    header.shadow #menu-icon {
+        color: var(--main-color);
+    }
+    .navbar {
+        /* Mobile navbar styles */
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgba(14, 55, 54, 0.15);
+        transition: 0.2s all linear;
+        align-items: center;
+    }
+    .navbar a {
+        width: 100%;
+        color: var(--text-color);
+    }
+    .navbar a:hover {
+        color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+    }
+    .navbar a::after {
+        display: none;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+    .btn {
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    }
+}
+
+/* For screens <= 472px */
+@media (max-width: 472px) {
+    .newsletter form .email {
+        width: auto;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+}
+
+/* For screens <= 370px */
+@media (max-width: 370px) {
+    header {
+        padding: 6px 4%;
+    }
+    .home-text h1 {
+        font-size: 1.7rem;
+    }
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+    .box .box-img {
+        height: 240px;
+    }
+}
+
+/* Device-specific Media Queries */
+
+/* iPhone 4 (320px x 480px) */
+@media only screen and (max-width: 480px) {
+    .contact {
+        padding: 40px 20px;
+    }
+    .heading {
+        font-size: 1.2rem;
+    }
+    iframe {
+        width: 100%;
+    }
+    form {
+        margin-top: 10px;
+    }
+}
+
+/* iPhone X (375px x 821px) */
+@media only screen and (min-width: 375px) and (max-width: 821px) {
+    .contact {
+        padding: 50px 30px;
+    }
+}
+
+/* Google Pixel (411x 731px) */
+@media only screen and (min-width: 411px) and (max-width: 731px) {
+    .contact {
+        padding: 60px 40px;
+    }
+}
+
+/* iPad (768px X 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        padding: 70px 70px;
+    }
+}
+
+/* MacBook Pro (1440px x 900px) */
+@media only screen and (min-width: 1440px) and (max-width: 900px) {
+    .contact {
+        padding: 80px 80px;
+    }
+}
+/*# sourceMappingURL=style.css.map */
